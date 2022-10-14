@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joquempô</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Joquempô</h1>
+        <p>(Jan-Ken-Pon)</p>
+    </header>
+
+    <section>
+
+        <div id="left">
+            <h2>Jogador:</h2>
+            <div id="containerJogador">
+                <input type="radio" name="imagem" id="pedraInput" />
+                <label for="pedraInput">
+                    <img id="pedra" src="pedra.png" alt="">
+                </label>
+
+                <input type="radio" name="imagem" id="papelInput" />
+                <label for="papelInput">
+                    <img id="papel" src="papel.png" alt="">
+                </label>
+
+                <input type="radio" name="imagem" id="tesouraInput" />
+                <label for="tesouraInput">
+                    <img id="tesoura" src="tesoura.png" alt="">
+                </label>
+            </div>
+        </div>
+
+
+        <div id="computador">
+            <h2>Computador:</h2>
+            <div id="containerComputador">
+                <input type="radio" name="imagem" id="i4" />
+                <label for="i4"><img id="pc" src="./padrao.png" alt=""></label>
+
+            </div>
+        </div>
+
+
+        <div id="resultado">
+            <h2>Resultado:</h2>
+            <div id="containerResultado">
+                <p id="placar"></p>
+
+
+
+            </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <input class="botao" type="button" value="JOGAR" onclick="jogar()">
+        <input class="botao" type="button" value="RESET" onclick="resetar()">
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
